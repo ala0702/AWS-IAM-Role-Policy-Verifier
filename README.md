@@ -13,9 +13,9 @@ This project contains a method for verifying the input JSON data, specifically f
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/ala0702/AWS-IAM-Role-Policy-Verifier.git
     ```
-    replace repository_url with: https://github.com/ala0702/AWS-IAM-Role-Policy-Verifier.git
+    
     
 
 2. Navigate to the project directory:

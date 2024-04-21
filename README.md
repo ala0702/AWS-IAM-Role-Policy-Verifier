@@ -8,38 +8,49 @@ This project contains a method for verifying the input JSON data, specifically f
 
 - Python 3.x
 
-### Installation
+## How to Run
 
-1. Clone the repository:
+1. Clone this repository to your local machine:
 
-git clone <repository-url>
+    ```bash
+    git clone <repository_url>
+    ```
 
-### Running the Method
+2. Navigate to the project directory:
 
-1. Ensure you have a JSON file containing an IAM Role Policy definition. The JSON file should adhere to the following format:
+    ```bash
+    cd AWS-IAM-Role-Policy-Verifier
+    ```
+
+3. Run the program with the following command, providing the path to the JSON file as an argument:
+
+    ```bash
+    python ExerciseHome.py <file_path>
+    ```
+
+    Replace `<file_path>` with the path to your JSON file.
+
+## Input JSON Format
+
+The input JSON data should be formatted according to the AWS IAM Role Policy format. Here's an example:
 
 ```json
 {
-  "PolicyName": "root",
-  "PolicyDocument": {
-    "Version": "2012-10-17",
-    "Statement": [
-      {
-        "Sid": "IamListAccess",
-        "Effect": "Allow",
-        "Action": ["iam:ListRoles", "iam:ListUsers"],
-        "Resource": "*"
-      }
-    ]
-  }
+    "PolicyName": "root",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "IamListAccess",
+                "Effect": "Allow",
+                "Action": [
+                    "iam:ListRoles",
+                    "iam:ListUsers"
+                ],
+                "Resource": "*"
+            }
+        ]
+    }
 }
-
-2. Invoke the verify_input method by passing the file path of your JSON file as an argument:
-
-python HomeExercise.py <yourPathToFile.json>
-
-
-The method will return True if there are no single asterisks (*) in the "Resource" field of any statement, and False otherwise.
-
-
 ```
+For more visit [my Profile](https://github.com/ala0702)

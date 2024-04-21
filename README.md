@@ -25,7 +25,7 @@ This project contains a method for verifying the input JSON data, specifically f
 3. Run the program with the following command, providing the path to the JSON file as an argument:
 
     ```bash
-    python ExerciseHome.py <file_path>
+    python HomeExercise.py <file_path>
     ```
 
     Replace `<file_path>` with the path to your JSON file.
